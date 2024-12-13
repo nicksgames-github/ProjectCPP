@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration and Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+        }
+        #register-login-form {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 400px;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        h2 {
+            margin-top: 0;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="submit"] {
+            width: calc(100% - 20px);
+            padding: 12px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        #user-greeting {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="register-login-form">
+        <!-- Registration Form -->
+        <form id="registrationForm">
+            <h2>Register</h2>
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required><br><br>
+            <input type="submit" value="Register">
+        </form>
+        
+        <!-- Login Form -->
+        <form id="loginForm">
+            <h2>Login</h2>
+            <label for="loginEmail">Email:</label><br>
+            <input type="email" id="loginEmail" name="email" required><br>
+            <label for="loginPassword">Password:</label><br>
+            <input type="password" id="loginPassword" name="password" required><br><br>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+
+    <div id="user-greeting">
+        <!-- Displayed after successful login -->
+        <p>Hello, <span id="usernameSpan"></span>! You are logged in.</p>
+        <button id="logoutButton">Logout</button>
+    </div>
+
+    <script>
+        document.getElementById("registrationForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent the default form submission
+            // Get the values from the form
+            var username = document.getElementById("username").value;
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            // Store the user information in localStorage
+            localStorage.setItem("registeredUser", JSON.stringify({username: username, email: email}));
+            // Set isLoggedIn flag to true
+            localStorage.setItem("isLoggedIn", true);
+            // Redirect to index.html
+            window.location.href = "fresh.html";
+        });
+
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent the default form submission
+            // Get the values from the form
+            var email = document.getElementById("loginEmail").value;
+            var password = document.getElementById("loginPassword").value;
+            // Simulate login functionality (replace with actual backend code)
+            // For simplicity, we'll just check if the email and password match
+            var registeredUser = JSON.parse(localStorage.getItem("registeredUser"));
+            if (registeredUser && registeredUser.email === email) {
+                // Successful login
+                // Set isLoggedIn flag to true
+                localStorage.setItem("isLoggedIn", true);
+                // Redirect to index.html
+                window.location.href = "fresh.html";
+            } else {
+                // Failed login
+                alert("Invalid email or password.");
+            }
+        });
+
+        // Check if user is already logged in
+        if (localStorage.getItem("isLoggedIn")) {
+            document.getElementById("register-login-form").style.display = "none";
+            document.getElementById("user-greeting").style.display = "block";
+            var user = JSON.parse(localStorage.getItem("registeredUser"));
+            document.getElementById("usernameSpan").innerText = user.username;
+        }
+
+        // Logout functionality
+        document.getElementById("logoutButton").addEventListener("click", function() {
+            localStorage.removeItem("isLoggedIn");
+            document.getElementById("register-login-form").style.display = "block";
+            document.getElementById("user-greeting").style.display = "none";
+        });
+
+        window.addEventListener('beforeunload', function(event) {
+            // Redirect the user to fresh.html when they close the tab
+            window.location.href = 'fresh.html';
+        });
+    </script>
+</body>
+</html>

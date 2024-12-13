@@ -1,0 +1,12 @@
+header h1 {
+    margin-left: 20px; /* Add margin to separate the title from the links */
+    display: inline-block; /* Ensure the title takes up space */
+}
+
+header h1 span {
+    display: block; /* Make each line of the title appear on a separate line */
+    text-align: center; /* Align text to the center */
+}
+
+
+

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camino Tech Online</title> 
+    <style> 
+
+    
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+            color: #333;
+            /* Set background image */
+            background-image: url(https://cdn.discordapp.com/attachments/1180016841901486140/1206110573373427782/Copy_of_Untitled_Website_1.png?ex=675c6fc1&is=675b1e41&hm=7d1e0a86bf2a7437214f9e05af9d306f10885b373a39602bf0afcb80f5856ebf&);
+            /* Set background image to cover the entire viewport */
+            background-size: cover;
+            /* Center the background image */
+            background-position: center;
+            /* Fixed background so it doesn't scroll with content */
+            background-attachment: fixed;
+        }
+
+        header {
+            background-image: url(https://cdn.discordapp.com/attachments/1180016841901486140/1206113480097140736/image.png?ex=65dad3b6&is=65c85eb6&hm=1086d4b11e2316e1a62312cca83cf847d4cbf7d4d6482e087fa2fcf2f879020b&);
+            color: #fff;
+            display: flex;
+            align-items: center; /* Align items vertically */
+            justify-content: space-between; /* Spread out items horizontally */
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-family: cursive;
+            font-size: 40px;
+            font-weight: bold;
+            margin-left: 20px; /* Add margin to separate the title from the links */
+        }
+
+        nav {
+            margin-right: auto; /* Push nav to the right */
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+            font-size: 24px; /* Increase font size */
+            border-radius: 50%; /* Make the links circular */
+            padding: 10px; /* Adjust padding to make the circles larger */
+            display: inline-block; /* Ensure the circles take up space */
+        }
+
+        nav a:hover {
+            color: #000;
+        }
+
+        nav a:hover[href="#register-login"] {
+            background-color: #ff69b4; /* Pink background color for Register/Login */
+            color: #fff; /* White text color for Register/Login */
+        }
+
+        main {
+            display: flex;
+            justify-content: flex-end; /* Align content to the right */
+            padding: 20px;
+        }
+
+        footer {
+            background-image: url(https://cdn.discordapp.com/attachments/1180016841901486140/1206110573373427782/Copy_of_Untitled_Website_1.png?ex=675c6fc1&is=675b1e41&hm=7d1e0a86bf2a7437214f9e05af9d306f10885b373a39602bf0afcb80f5856ebf&);
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        #home {
+            text-align: left; /* Align text to the left */
+            max-width: 50%; /* Limit maximum width */
+        }
+
+        #home img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-left: 20px; /* Add margin to separate the image from the title */
+        }
+
+        #home-content {
+            margin-left: 20px; /* Add margin to separate the content from the image */
+        }
+
+        #subject-description {
+            margin-top: 20px;
+            text-align: left; /* Align text to the left */
+            max-width: 50%; /* Limit maximum width */
+            font-family: Arial, sans-serif; /* Set font family */
+            font-size: 18px; /* Set font size */
+            line-height: 1.6; /* Set line height */
+        }
+
+        #video-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .video {
+            margin: 10px;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .video:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+   <!-- Header Section -->
+<header style="display: flex; align-items: center;"> 
+    <!-- Logo -->
+    <a href="index.html">
+        <img src="https://cdn.discordapp.com/attachments/1180016841901486140/1206336915285086288/Untitled_design_1.png?ex=675c99cd&is=675b484d&hm=3caf1343cb3a10e0bca1a953f24735854146434195f1a56d92b7af0a82952533&" alt="Da Group Logo" style="width: 200px; height: auto;">
+    </a>
+    
+    <!-- Navigation Links -->
+    <nav>
+        <a href="index.html">
+            <img src="https://cdn.discordapp.com/attachments/1180016841901486140/1206424734409957436/About_1.png?ex=675c42d6&is=675af156&hm=c8d1dee41a5b74ffc4c2699418c823fb2037dea5ff58212f2b46626761c3723d&" alt="Home" style="width: 300px; height: auto;">
+        </a>
+    </nav> 
+
+    <nav>
+        <a href="about.html">
+            <img src="https://cdn.discordapp.com/attachments/1180016841901486140/1206424733881470996/About_3.png?ex=675c42d6&is=675af156&hm=795ffbdcd2ffb86a4cfa6a1f27aac8e7798ec2936bce805692ba2e6abd730fef&" alt="About" style="width: 300px; height: auto;">
+        </a>
+    </nav>
+    
+    <nav>
+        <a href="socials.html">
+            <img src="https://cdn.discordapp.com/attachments/1180016841901486140/1206425191945609246/About_1.png?ex=675c4344&is=675af1c4&hm=e48f0f63ff9b601580afd01dea59e3e592e5e136bd64dbe38dd90caf13076364&" alt="Socials" style="width: 280px; height: auto;">
+        </a>
+    </nav>
+    
+        
+    <nav>
+        <a href="register.html">
+            <img src="https://cdn.discordapp.com/attachments/1180016841901486140/1208280962211774475/Copy_of_Untitled_Website.png?ex=675c6c16&is=675b1a96&hm=32b8de2a5cff7b63e37386d8257936011e92f2a4f2c8eeedb612dc6828394994&" alt="Register/Login" style="width: 200px; height: auto;">
+        </a> 
+    </nav>
+
+           
+  
+    </header>
+    
+    <!-- Main Content Section -->
+   
+
+
+
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empowering Education Project</title>
+    <style>
+        /* Apply a global white text color to everything */
+        * {
+            color: white !important;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #003366;
+        }
+
+        header {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            margin-top: 0.5rem;
+            font-size: 1.5rem;
+        }
+
+        .container {
+            width: 80%;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: #004080;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .section {
+            margin-bottom: 2rem;
+        }
+
+        .section h3 {
+            font-size: 1.8rem;
+        }
+
+        .section p, .section ul {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #003366;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Empowering Education: Bridging the Gap in Underprivileged Communities</h1>
+    <h2>Making STEM Education Accessible for All – Inspiring Curiosity, Building Skills, and Creating Opportunities</h2>
+</header>
+
+<div class="container">
+    <section class="section">
+        <h3>Welcome</h3>
+        <p>Welcome to the Empowering Education Project! We believe that everyone, regardless of background, should have access to the knowledge and skills needed to succeed in today’s tech-driven world. Our mission is to break down educational barriers and provide underprivileged communities with the tools and support to thrive. Whether it’s through coding workshops for kids or digital safety programs for older adults, our goal is to ignite a passion for learning and foster self-confidence across all age groups.</p>
+    </section>
+
+    <section class="section">
+        <h3>What We Do</h3>
+        <p>Through our free workshops, we provide hands-on experiences that teach children and adults how to engage with technology in meaningful ways. By focusing on coding, engineering, and digital literacy, we aim to empower participants to take control of their learning, develop problem-solving skills, and prepare for a future in an ever-evolving world.</p>
+    </section>
+
+    <section class="section">
+        <h3>Core Values</h3>
+        <ul>
+            <li><strong>Inclusion:</strong> We believe education should be accessible to everyone, no matter their socio-economic background.</li>
+            <li><strong>Innovation:</strong> We encourage creativity and curiosity in all of our workshops.</li>
+            <li><strong>Community:</strong> We foster a sense of belonging where everyone can learn, grow, and support each other.</li>
+            <li><strong>Empowerment:</strong> Our programs equip individuals with the skills and confidence to succeed in both personal and professional life.</li>
+        </ul>
+    </section>
+
+    <section class="section">
+        <h3>Why It Matters</h3>
+        <p>In lower socioeconomic communities, access to quality education and resources is often limited. This project seeks to address that gap by providing engaging, hands-on learning experiences that not only teach technical skills but also instill a growth mindset and a sense of possibility. By equipping the next generation with coding skills, and helping older adults navigate the digital world, we are creating a ripple effect of opportunity that can change lives.</p>
+    </section>
+
+    <section class="section">
+        <h3>Call to Action</h3>
+        <p>Join us in making a difference. Explore our workshops, volunteer opportunities, or make a donation to help us expand our reach and impact more communities. Together, we can bridge the educational gap and provide the tools for success.</p>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 Empowering Education Project. All rights reserved.</p>
+</footer>
+
+</body>
+
+
+
+
+
+    <!-- Footer Section -->
+    <footer>
+        &copy; 2024 Camino Tech Online
+    </footer>
+
+    <!-- JavaScript Section -->
+    <script>
+        // Replace 'YOUR_API_KEY' with your actual YouTube Data API key
+        const apiKey = 'YOUR_API_KEY';
+
+        // Function to fetch videos for a specific subject
+        async function getVideos(subject, containerId) {
+            const response = await fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&q=${subject}&type=video&maxResults=4&key=${apiKey}`);
+            const data = await response.json();
+
+            const videoContainer = document.getElementById(containerId);
+
+            data.items.forEach(video => {
+                const videoUrl = `https://www.youtube.com/watch?v=${video.id.videoId}`;
+                const thumbnailUrl = video.snippet.thumbnails.medium.url;
+
+                const videoElement = document.createElement('div');
+                videoElement.className = 'video';
+                videoElement.innerHTML = `
+                    <a href="${videoUrl}" target="_blank">
+                        <img src="${thumbnailUrl}" alt="${video.snippet.title}">
+                        <p>${video.snippet.title}</p>
+                    </a>
+                `;
+
+                videoContainer.appendChild(videoElement);
+            });
+        } 
+       // Check if the user is logged in (you can use any authentication method here)
+      
+    // Check if the user is logged in (you can use any authentication method here)
+    
+    // Check if the user is logged in (you can use any authentication method here)
+    var isLoggedIn = localStorage.getItem("isLoggedIn");
+
+    // Toggle visibility of Register/Login link based on authentication status
+    function toggleRegisterLoginButton() {
+        var registerLoginNav = document.getElementById("registerLoginNav");
+        if (isLoggedIn) {
+            registerLoginNav.style.display = "none";
+        } else {
+            registerLoginNav.style.display = "block";
+        }
+    }
+
+    // Function to logout
+    function logout() {
+        // Remove user information from localStorage or perform any other logout actions
+        localStorage.removeItem("isLoggedIn");
+        // Redirect to the login page or wherever appropriate
+        window.location.href = "register.html";
+    }
+
+    function logout() {
+        // Remove user information from localStorage or perform any other logout actions
+        localStorage.removeItem("isLoggedIn");
+        // Redirect to the login page or wherever appropriate
+        window.location.href = "fresh.html";
+
+        // Add a new entry to the browser's history stack to ensure pressing the back arrow goes to fresh.html
+        window.history.pushState(null, null, "fresh.html");
+    }
+    // Call the function to toggle visibility of Register/Login button initially
+    toggleRegisterLoginButton();
+
+
+    // Check if the user is logged in
+    var isLoggedIn = localStorage.getItem("isLoggedIn");
+    // If not logged in, redirect to index.html
+    if (!isLoggedIn) {
+        window.location.href = "fresh.html";
+    }
+
+        
+        // Call the function to fetch and display videos for each subject
+        getVideos('Algebra 1', 'algebra-video-container');
+        getVideos('Calculus', 'calculus-video-container');
+        getVideos('Physics', 'physics-video-container');
+    </script>
+        <script>
+            // Your existing JavaScript code
+    
+            // Function to logout
+  // Prevent the backspace key from navigating back.
+
+
+
+        </script> 
+        <script>
+           

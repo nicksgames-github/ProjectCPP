@@ -1,0 +1,299 @@
+
+
+
+           
+           <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camino Tech Online</title> 
+    <style> 
+
+    
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+            color: #333;
+            /* Set background image */
+            background-image: url(https://cdn.discordapp.com/attachments/1180016841901486140/1206110573373427782/Copy_of_Untitled_Website_1.png?ex=675c6fc1&is=675b1e41&hm=7d1e0a86bf2a7437214f9e05af9d306f10885b373a39602bf0afcb80f5856ebf&);
+            /* Set background image to cover the entire viewport */
+            background-size: cover;
+            /* Center the background image */
+            background-position: center;
+            /* Fixed background so it doesn't scroll with content */
+            background-attachment: fixed;
+        }
+
+        header {
+            background-image: url(https://cdn.discordapp.com/attachments/1180016841901486140/1206113480097140736/image.png?ex=65dad3b6&is=65c85eb6&hm=1086d4b11e2316e1a62312cca83cf847d4cbf7d4d6482e087fa2fcf2f879020b&);
+            color: #fff;
+            display: flex;
+            align-items: center; /* Align items vertically */
+            justify-content: space-between; /* Spread out items horizontally */
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-family: cursive;
+            font-size: 40px;
+            font-weight: bold;
+            margin-left: 20px; /* Add margin to separate the title from the links */
+        }
+
+        nav {
+            margin-right: auto; /* Push nav to the right */
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+            font-size: 24px; /* Increase font size */
+            border-radius: 50%; /* Make the links circular */
+            padding: 10px; /* Adjust padding to make the circles larger */
+            display: inline-block; /* Ensure the circles take up space */
+        }
+
+        nav a:hover {
+            color: #000;
+        }
+
+        nav a:hover[href="#register-login"] {
+            background-color: #ff69b4; /* Pink background color for Register/Login */
+            color: #fff; /* White text color for Register/Login */
+        }
+
+        main {
+            display: flex;
+            justify-content: flex-end; /* Align content to the right */
+            padding: 20px;
+        }
+
+        footer {
+            background-image: url(https://cdn.discordapp.com/attachments/1180016841901486140/1206110573373427782/Copy_of_Untitled_Website_1.png?ex=675c6fc1&is=675b1e41&hm=7d1e0a86bf2a7437214f9e05af9d306f10885b373a39602bf0afcb80f5856ebf&);
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        #home {
+            text-align: left; /* Align text to the left */
+            max-width: 50%; /* Limit maximum width */
+        }
+
+        #home img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-left: 20px; /* Add margin to separate the image from the title */
+        }
+
+        #home-content {
+            margin-left: 20px; /* Add margin to separate the content from the image */
+        }
+
+        #subject-description {
+            margin-top: 20px;
+            text-align: left; /* Align text to the left */
+            max-width: 50%; /* Limit maximum width */
+            font-family: Arial, sans-serif; /* Set font family */
+            font-size: 18px; /* Set font size */
+            line-height: 1.6; /* Set line height */
+        }
+
+        #video-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .video {
+            margin: 10px;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .video:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+   <!-- Header Section -->
+<header style="display: flex; align-items: center;"> 
+    <!-- Logo -->
+    <a href="fresh.html">
+        <img src="https://cdn.discordapp.com/attachments/1180016841901486140/1206336915285086288/Untitled_design_1.png?ex=675c99cd&is=675b484d&hm=3caf1343cb3a10e0bca1a953f24735854146434195f1a56d92b7af0a82952533&" alt="Da Group Logo" style="width: 200px; height: auto;">
+    </a>
+    
+    <!-- Navigation Links -->
+    <nav>
+        <a href="fresh.html">
+            <img src="https://cdn.discordapp.com/attachments/1180016841901486140/1206424734409957436/About_1.png?ex=675c42d6&is=675af156&hm=c8d1dee41a5b74ffc4c2699418c823fb2037dea5ff58212f2b46626761c3723d&" alt="Home" style="width: 300px; height: auto;">
+        </a>
+    </nav> 
+
+    <nav>
+        <a href="about.html">
+            <img src="https://cdn.discordapp.com/attachments/1180016841901486140/1206424733881470996/About_3.png?ex=675c42d6&is=675af156&hm=795ffbdcd2ffb86a4cfa6a1f27aac8e7798ec2936bce805692ba2e6abd730fef&" alt="About" style="width: 300px; height: auto;">
+        </a>
+    </nav>
+    
+    <nav>
+        <a href="socials.html">
+            <img src="https://cdn.discordapp.com/attachments/1180016841901486140/1206425191945609246/About_1.png?ex=675c4344&is=675af1c4&hm=e48f0f63ff9b601580afd01dea59e3e592e5e136bd64dbe38dd90caf13076364&" alt="Socials" style="width: 280px; height: auto;">
+        </a>
+    </nav>
+    
+        
+    
+           
+          
+    <!-- Logout button with large image on the right side -->
+    <nav style="margin-left: auto;">
+        <a href="index.html" onclick="logout()" style="display: flex; align-items: center;"> 
+            <img src="https://cdn.discordapp.com/attachments/1180016841901486140/1208281426420568064/Copy_of_Untitled_Website_1.png?ex=675c6c84&is=675b1b04&hm=850eba32e35224b06a1fb04cb7d5dbf5e85436ef8fdbfc955f0cae9baa3ef74b&" alt="Logout" style="width: 200px; height: auto;"> 
+          
+        </a>
+    </nav>
+        
+
+
+        
+    </header>
+  
+  
+    <!-- Main Content Section -->
+    <main>
+        <body> 
+
+            <style>
+                 /* Add your CSS styles here */
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* CSS for image containers and repeated images */
+        #image-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            max-width: 100%;
+        }
+
+        .image-container {
+            margin: 10px;
+            max-width: calc(20% - 20px); /* Adjust max-width to fit 5 images */
+            height: auto;
+            overflow: hidden;
+        }
+
+        .repeat-image {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+            </style>
+            <!-- Image Section -->
+            <section id="image-section">
+                <!-- Repeat the image 5 times -->
+                <div class="image-container">
+                    <img src="https://cdn.discordapp.com/attachments/1180016841901486140/1208993241354084442/8th_grade.png?ex=675c6072&is=675b0ef2&hm=0c3463bc3ea386f467c1e9b216cc15f39503dcd3622ddae56319360dd95e4815&" alt="Image" class="repeat-image">
+                </div>
+                <div class="image-container">
+                    <img src="https://cdn.discordapp.com/attachments/1180016841901486140/1208993242503450695/9th.png?ex=675c6073&is=675b0ef3&hm=3cfb987e8ce8e37a6e47da2e695f6b4808705572e9f54ac3462346f22da76109&" alt="Image" class="repeat-image">
+                </div>
+                <div class="image-container">
+                    <img src="https://cdn.discordapp.com/attachments/1180016841901486140/1208993237558370304/10th.png?ex=675c6071&is=675b0ef1&hm=85018375605efd32572bece0afcc8c9595dd607514f7eee7fd1ebb4327362410&" alt="Image" class="repeat-image">
+                </div>
+                <div class="image-container">
+                    <img src="https://cdn.discordapp.com/attachments/1180016841901486140/1208993239026110494/11th.png?ex=675c6072&is=675b0ef2&hm=ffb4524942cffe7fbf66b45806ffeccaa32c781cfc7a44ed6065c8af54ac0b0f&" alt="Image" class="repeat-image">
+                </div>
+                <div class="image-container">
+                    <img src="https://cdn.discordapp.com/attachments/1180016841901486140/1208993240209162330/12th_grade.png?ex=675c6072&is=675b0ef2&hm=eed3b99f99d41a42da3311bb7d71333c446b4abea7fcc2add51ba80fa0b72201&" alt="Image" class="repeat-image">
+                </div>
+            </section>
+        </body>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        &copy; 2024 Camino Tech Online
+    </footer>
+
+    <!-- JavaScript Section -->
+    <script>
+        // Replace 'YOUR_API_KEY' with your actual YouTube Data API key
+        const apiKey = 'YOUR_API_KEY';
+
+        // Function to fetch videos for a specific subject
+        async function getVideos(subject, containerId) {
+            const response = await fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&q=${subject}&type=video&maxResults=4&key=${apiKey}`);
+            const data = await response.json();
+
+            const videoContainer = document.getElementById(containerId);
+
+            data.items.forEach(video => {
+                const videoUrl = `https://www.youtube.com/watch?v=${video.id.videoId}`;
+                const thumbnailUrl = video.snippet.thumbnails.medium.url;
+
+                const videoElement = document.createElement('div');
+                videoElement.className = 'video';
+                videoElement.innerHTML = `
+                    <a href="${videoUrl}" target="_blank">
+                        <img src="${thumbnailUrl}" alt="${video.snippet.title}">
+                        <p>${video.snippet.title}</p>
+                    </a>
+                `;
+
+                videoContainer.appendChild(videoElement);
+            });
+        } 
+    
+
+            
+        // Call the function to fetch and display videos for each subject
+        getVideos('Algebra 1', 'algebra-video-container');
+        getVideos('Calculus', 'calculus-video-container');
+        getVideos('Physics', 'physics-video-container');
+    </script>
+        <script>
+            // Your existing JavaScript code
+    
+    
+function logout() {
+    // Remove user information from localStorage or perform any logout actions
+    localStorage.removeItem("isLoggedIn");
+    // Redirect to fresh.html
+    window.location.href = "fresh.html"; 
+    window.history.pushState({}, "", "fresh.html");
+}
+
+        
+history.pushState(null, null, location.href);
+        window.onpopstate = function () {
+            history.go(1);
+        };
+   
+      
+    window.addEventListener('beforeunload', function(event) {
+        // Redirect the user to fresh.html when they close the tab
+        window.location.href = 'index.html';
+    });
+</script>

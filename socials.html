@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Page</title>
+    <style>
+        /* Basic reset */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Professional background */
+        body {
+            background-color: #f4f4f4; /* Light grey background for professionalism */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        /* Link styling for Home button */
+        #homeButton {
+            text-decoration: none;
+            font-size: 18px;
+            color: #007BFF;
+            padding: 10px 20px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            border: 1px solid #007BFF;
+            transition: all 0.3s ease;
+        }
+
+        #homeButton:hover {
+            background-color: #007BFF;
+            color: white;
+        }
+
+        /* Centering image */
+        #socialImage {
+            max-width: 80%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 50px; /* To avoid overlap with Home button */
+        }
+    </style>
+</head>
+<body>
+    <!-- Home button -->
+    <a href="index.html" id="homeButton">Home Page</a>
+    
+    <!-- Image -->
+    <img id="socialImage" src="https://cdn.discordapp.com/attachments/1122378953492025444/1316998037796683787/Add_a_heading_1.png?ex=675d1580&is=675bc400&hm=4188b2556cd702247487979ea2e2cd79a325f4068adabd493a41e866902d8c3e&" alt="Social Image">
+</body>
+</html>
